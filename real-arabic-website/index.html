@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome aboard the Arabic ark! This is the place to learn Egyptian Arabic"> 
+    <meta name="keywords" content=" Egyptian Arabic, tutor, Arabic, Arabic Ark">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Arabic Ark</title>
+</head>
+<body>
+  <header>
+      <nav>
+        <img class="brand" src="img/logo3.png" alt="logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="videos.html" class="current">Videos</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul> 
+        
+        
+        
+        <a href="#popup" class="trigger">login</a>
+        <div id="popup" class="overlay">
+          <div class="wrapper">
+            <a href="#" class="close">&times;</a>
+            <div class="column details">
+              <div class="signin">
+                <h1>Sign In</h1>
+                <input type="email" placeholder="Username">
+                <input type="password" placeholder="password">
+                <a href="#">Forgot Password?</a>
+                <button class="form-submit">Sign In</button>
+                <span>You don't have an account yet? <button id="signup">Creat it now!</button></span>
+              </div>
+
+              <div class="signup">
+                <h1>Sign Up</h1>
+                <input type="name" placeholder="Full Name">
+                <input type="email" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button class="form-submit">Sign In</button>
+                <span>Already have an account? <button id="signin">Sign In</button></span>
+              </div>
+            
+            </div>
+            
+            <div class="column content">
+              <div class="signin">
+                <h1>Welcome back on the Arabic Ark!</h1>
+                <p>Come on board with us by signing in with your personal info</p>
+              </div>
+              
+              <div class="signup">
+                <h1>Hello, friend!</h1>
+                <p>Sign up and start your Arabic journey with us</p>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      </nav>
+  </header> 
+  <div class="banner1">
+    <img src="./index2_files/tourism.jpg">
+    <div class="text-box">
+        <h1>ALL ABOARD THE ARABIC ARK!</h1>
+        <span>                                                    </span>
+        <p>Are you interested in learning one of the most spoken and most rewarding
+            languages in the world? Whether you want to explore the treasuares of Egypt or put a smile on your Egyptian friends'
+            faces then you've come to the right place.</p>
+    </div>
+  </div>
+  <div class="banner2">
+    <img src="img/professional.webp">
+    <div class="text-box">
+        <h1>Want to learn more buisiness savy vocabulary?</h1>
+        <span></span>
+        <p>Our teacher Aymo is also qualified to tell you all the words you need for a buisiness meeting in Cairo</p>
+    </div>
+  </div>
+  <div class="banner3">
+    <img src="img/clock.jpeg">
+    <div class="text-box">
+        <h1>Worried you won't have enough time in a day to practise?</h1>
+        <span></span>
+        <p>Aymo, our tutor is willing to teach a lesson or answer any questions via text any time of the day</p>
+    </div>
+  </div>
+  <div class="banner4">
+    <img src="img/piggy-bank.webp">
+    <div class="text-box">
+        <h1>Cheap tuition fees</h1>
+        <span></span>
+        <p>Our courses are both affordable and enriching. If you are interested but not sure if you can afford our fixed 
+           price then contact us to negotiate.
+        </p>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $('.signup').hide();
+
+    $('#signin, #signup').on(
+      'click',
+      function(){
+        $('.signin, .signup').toggle()
+      }
+    )
+  </script>
+</body>
+</html> 
