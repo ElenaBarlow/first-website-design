@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome aboard the Arabic ark! This is the place to learn Egyptian Arabic"> 
+    <meta name="keywords" content=" Egyptian Arabic, tutor, Arabic, Arabic Ark">
+    <link rel="stylesheet" href="videos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Videos</title>
+</head>
+<body>
+  <header>
+      <nav>
+        <img class="brand" src="img/logo3.png" alt="logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="videos.html" class="current">Videos</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul> 
+        
+        <a href="#popup" class="trigger">login</a>
+        <div id="popup" class="overlay">
+          <div class="wrapper">
+            <a href="#" class="close">&times;</a>
+            <div class="column details">
+              <div class="signin">
+                <h1>Sign In</h1>
+                <input type="email" placeholder="Username">
+                <input type="password" placeholder="password">
+                <a href="#">Forgot Password?</a>
+                <button class="form-submit">Sign In</button>
+                <span>You don't have an account yet? <button id="signup">Creat it now!</button></span>
+              </div>
+
+              <div class="signup">
+                <h1>Sign Up</h1>
+                <input type="name" placeholder="Full Name">
+                <input type="email" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button class="form-submit">Sign In</button>
+                <span>Already have an account? <button id="signin">Sign In</button></span>
+              </div>
+            
+            </div>
+            
+            <div class="column content">
+              <div class="signin">
+                <h1>Welcome back on the Arabic Ark!</h1>
+                <p>Come on board with us by signing in with your personal info</p>
+              </div>
+              
+              <div class="signup">
+                <h1>Hello, friend!</h1>
+                <p>Sign up and start your Arabic journey with us</p>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+        <a href="/">cart</i></a>
+      </nav>
+  </header> 
+
+  <section>
+  	<div class="vid-1">
+      <h1>Get to know Aymo!</h1>
+  		<iframe src="https://player.vimeo.com/video/713841276?h=7cbf72c0a2" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      <p>In this video, Aymo explains his background in becoming fluent in English, tutoring students and 
+         his british wife, and how he wants to help you reach the level you desire in Arabic. Get a sample of his teaching method
+         on his <a href="Arabic Ark YT" target="_blank">Arabic Ark Youtube Channel</a>
+        </p>
+  	</div> 
+  </section> 
+  
+    
+    
+    
+         
+      
+
+  <script type="text/javascript">
+    $('.signup').hide();
+
+    $('#signin, #signup').on(
+      'click',
+      function(){
+        $('.signin, .signup').toggle()
+      }
+    )
+  </script>
+</body>
+</html>
